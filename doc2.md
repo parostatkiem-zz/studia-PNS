@@ -2,4 +2,4 @@
 Project name: Purple Normandy Schnautzer
 
 ##Main tasks
-belbelbel
+sensowne male krotkie zdanie
