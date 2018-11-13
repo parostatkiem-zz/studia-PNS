@@ -2,7 +2,7 @@
 
 namespace Assets.Scripts.Map
 {
-    enum TerrainType
+    public enum TerrainType
     {
         grass = 0,
         water = 1,
@@ -10,38 +10,38 @@ namespace Assets.Scripts.Map
         hills = 3
     }
 
-    class EmptyField : MapObject
+    public class EmptyField : MapObject
     {
 
     }
 
-    class Castle : MapObject
+    public class Castle : MapObject
     {
 
     }
 
-    class Warrior : MapObject
+    public class Warrior : MapObject
     {
 
     }
 
-    class Archer : MapObject
+    public class Archer : MapObject
     {
 
     }
 
-    class HorseMan : MapObject
+    public class HorseMan : MapObject
     {
 
     }
 
-    class GoldMine : MapObject
+    public class GoldMine : MapObject
     {
 
     }
 
     [JsonConverter(typeof(MapObjectConverter))]
-    abstract class MapObject
+    public abstract class MapObject
     {
         public int objType { get; set; }
         public bool fraction { get; set; }
@@ -52,13 +52,13 @@ namespace Assets.Scripts.Map
     }
 
 
-    class MapElement
+    public class MapElement
     {
         public TerrainType terrainType;
         public MapObject mapObject;
     }
 
-    class Map
+    public class Map
     {
         public int hight;
         public int width;
