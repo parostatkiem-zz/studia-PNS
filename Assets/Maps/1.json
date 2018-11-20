@@ -1,6 +1,6 @@
 ﻿{
-  "hight": 2,
-  "width": 2,
+  "height": 3,
+  "width": 3,
   "mapElements": [
     {
       "terrainType": 0,
@@ -19,6 +19,41 @@
       "terrainType": 0,
       "mapObject": {
         "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
         "attack": 15
       }
     },

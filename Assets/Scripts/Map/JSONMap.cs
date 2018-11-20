@@ -60,7 +60,7 @@ namespace Assets.Scripts.Map
 
     public class Map
     {
-        public int hight;
+        public int height;
         public int width;
         public MapElement[] mapElements;
     }
