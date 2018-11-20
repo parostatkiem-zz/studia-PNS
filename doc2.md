@@ -1,4 +1,4 @@
-# DOCUMENTATION OF THE PROJECT
+# PROJECT DOCUMENTATION
 ## Project name: **Purple Normandy Schnautzer** 
 
 ## Programming methodology
@@ -20,7 +20,25 @@ Shared Github folder containing every element of the project with documentation.
 
 ### Division to stages of similar workload & time-consumption
 
-1. Creating the scene, map loading, rendering map & objects
-2. Single player game
-3. Multiplayer game & bug fixes
+1. Creating the scene
+2. Map loading
+3. Rendering map & objects
+4. Single player game:
+   
+   4.1 camera movement
+
+   4.2 units movement
+
+   4.3 ability to place buildings
+
+   4.4 buildings functionality
+5. Multiplayer game & bug fixes     
+   
+## Software architectural pattern
+The architectural pattern we've chosen is a client-server pattern. In our case, player 1 would act as a client as well as the server, and player 2 would be the client. Player 2, as a client, will be attached to the first player (server).
+
+In addition, within the project we follow the SOLID rules of object-oriented programming.
+
+## Data structure
+Our database will be saved in JSON files.
 
