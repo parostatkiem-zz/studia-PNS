@@ -25,9 +25,11 @@ public class MapRenderer :MonoBehaviour
         {
             for (var y = 0; y < map.height; y++, mapElementIndex++)
             {
-                Instantiate(prefabs[(int)map.mapElements[mapElementIndex].terrainType],
+              var elementInstance= Instantiate(prefabs[(int)map.mapElements[mapElementIndex].terrainType],
                             new Vector3(x: x * (square_size + offset), y: 0.0f,
                                         z:  y * (square_size+offset)), Quaternion.identity);
+
+                elementInstance.GetComponent<MapElement>().mapCords = new Vector2(x, y);
              
             }
         }
