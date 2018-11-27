@@ -1,6 +1,14 @@
 # PROJECT DOCUMENTATION
 ## Project name: **Purple Normandy Schnautzer** 
 
+## Project theme
+Implementation of the game Civilization (FreeCiv) with 2D visualization, loading map and game parameters from the database, support for many users on the network
+bonus: client program for at least two different platforms or 3D visualization
+
+## Game rules
+Each player has an immovable castle and basic army, divided into branches (infantry, archers, pikemen etc.). Armies conquer the surrounding areas, gather materials (wood, gold etc.) and fight battles between each other. Players expand their castles and army, using the collected materials. 
+The aim of the game is to conquer as many surrounding villages as possible and, of course, to defeat the opponent.
+
 ## Programming methodology
 Non-rigorous interpretation of Scrum methodology, based on weekly meetings and more frequent online meetups 
 
