@@ -1,6 +1,6 @@
 ﻿{
-  "height": 4,
-  "width": 3,
+  "height": 9,
+  "width": 11,
   "mapElements": [
     {
       "terrainType": 1,
@@ -77,8 +77,920 @@
         "objType": 4,
         "attack": 15
       }
-    }
-    ,
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 1
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 2,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 3,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 2,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
+    {
+      "terrainType": 1,
+      "mapObject": {
+        "objType": 4,
+        "attack": 15
+      }
+    },
     {
       "terrainType": 2,
       "mapObject": {
