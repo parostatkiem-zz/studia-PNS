@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,41 +10,22 @@ namespace Assets.Scripts.Map
 {
     static class MapLoader
     {
-        public static string mapString = @"{
-    ""hight"": 2,
-    ""width"": 2,
-  ""mapElements"": [
-    {
-      ""terrainType"": 0,
-      ""mapObject"": {
-            ""objType"":1,
-        }
-    },
-    {
-     ""terrainType"": 0,
-      ""mapObject"": {
-            ""objType"":2,
-            ""attack"":15
-        }
-    },
-    {
-     ""terrainType"": 0,
-     ""mapObject"": {
-            ""objType"":3,
-            ""attack"":15
-        }
-    },
-    {
-      ""terrainType"": 0,
-      ""mapObject"": {
-            ""objType"":4,
-            ""attack"":15
-        }
-    }
-  ]}";
+       
         public static Map LoadMapFromJson(String path)
         {
-            return JsonConvert.DeserializeObject<Map>(mapString);
+            try
+            {
+                using (StreamReader r = new StreamReader(path))
+                {
+
+                    string json = r.ReadToEnd();
+
+                    return JsonConvert.DeserializeObject<Map>(json);
+                }
+            }catch(Exception ex){
+                //TODO handleError
+                return null;
+            }
         }
     }
 }
