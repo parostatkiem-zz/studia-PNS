@@ -1,0 +1,29 @@
+.square {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: inline-block;
+  margin: 0.1em;
+  cursor: cell;
+}
+
+.square[title='0'] {
+  background-color: rgb(104, 65, 14);
+}
+.square[title='1'] {
+  background-color: #fc5;
+}
+.square[title='2'] {
+  background-color: #08a;
+}
+#container {
+  display: grid;
+  grid-gap: 0.1em;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  min-height: 100%;
+}
+body {
+  caret-color: aqua;
+}

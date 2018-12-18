@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="script.js"></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form onsubmit="HandleMapParamsChange(); return false;">
+<input placeholder="width" value="10" type="number" name="width"/>
+<input placeholder="height" value="15" type="number" name="height"/>
+<input type="submit" value="Zapisz"/>
+</form>
+<section id="typeSelector">
+<label for="type">Typ terenu: </label>
+<select  name="type" onchange="HandleTypeChange(event);">
+    <option value="0">Ziemia</option>
+    <option value="1">Piasek</option>
+    <option value="2">Woda</option>
+</select>
+</section>
+<div id="container">
+
+
+</div>
+</body>
+</html>
