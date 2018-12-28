@@ -7,13 +7,13 @@
   cursor: cell;
 }
 
-.square[title='0'] {
-  background-color: rgb(104, 65, 14);
+.square[title="0"] {
+  background-color: #3b873b;
 }
-.square[title='1'] {
+.square[title="1"] {
   background-color: #fc5;
 }
-.square[title='2'] {
+.square[title="2"] {
   background-color: #08a;
 }
 #container {
@@ -21,9 +21,18 @@
   grid-gap: 0.1em;
   max-width: 100%;
   box-sizing: border-box;
-
+  width: 100%;
   min-height: 100%;
 }
 body {
   caret-color: aqua;
+}
+
+#brush {
+  position: fixed;
+  display: none;
+  width: 2em;
+  height: 2em;
+  fill: #3b873b;
+  filter: drop-shadow(1px 1px 2px black);
 }
