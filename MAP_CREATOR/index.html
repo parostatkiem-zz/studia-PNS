@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
+    <title>Purple Normandy Schnauzer | Map editor</title>
   </head>
   <body>
     <svg
@@ -29,18 +31,20 @@
       </g>
       <g id="Layer_1_1_" />
     </svg>
-    <form onsubmit="HandleMapParamsChange(); return false;">
-      <input placeholder="width" value="10" type="number" name="width" />
-      <input placeholder="height" value="15" type="number" name="height" />
-      <input type="submit" value="Zapisz" />
-    </form>
-    <section id="typeSelector">
-      <label for="type">Typ terenu: </label>
-      <select name="type" onchange="HandleTypeChange(event);">
-        <option value="0">Ziemia</option>
-        <option value="1">Piasek</option>
-        <option value="2">Woda</option>
-      </select>
+    <section id="top-bar">
+        <form onsubmit="HandleMapParamsChange(); return false;">
+            <input placeholder="width" value="10" type="number" name="width" />
+            <input placeholder="height" value="15" type="number" name="height" />
+            <input type="submit" value="Zapisz" />
+        </form>
+        <div id="typeSelector">
+            <label for="type">Typ terenu: </label>
+            <select name="type" onchange="HandleTypeChange(event);" value="0">
+                <option value="0">Trawa</option>
+                <option value="1">Piasek</option>
+                <option value="2">Woda</option>
+            </select>
+        </section>
     </section>
     <div
       id="container"

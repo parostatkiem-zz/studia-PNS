@@ -51,7 +51,6 @@ const HandleTypeChange = e => {
 
 const HandleContainerHover = e => {
   elems.brush.style.display = "block";
-
   return false;
 };
 

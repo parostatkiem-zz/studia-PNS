@@ -23,9 +23,15 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 100%;
+  padding: 0.5em;
 }
 body {
-  caret-color: aqua;
+  height: 100%;
+  margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+html {
+  height: 100vh;
 }
 
 #brush {
@@ -35,4 +41,20 @@ body {
   height: 2em;
   fill: #3b873b;
   filter: drop-shadow(1px 1px 2px black);
+}
+
+#top-bar {
+  color: white;
+  width: 100%;
+  padding: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: rgb(97, 39, 99);
+  box-shadow: 0 3px 5px black;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 1.2em;
 }
