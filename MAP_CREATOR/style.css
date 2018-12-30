@@ -58,3 +58,40 @@ html {
   left: 0;
   font-size: 1.2em;
 }
+
+#code__hook {
+  height: 1.2em;
+
+  position: relative;
+}
+#code__dog {
+  height: 140%;
+}
+#code {
+  height: 1.5em;
+  width: 28em;
+  resize: both;
+  overflow: auto;
+  position: absolute;
+  background-color: rgb(97, 39, 99);
+  color: white;
+  padding: 0.5em;
+  font-size: 70%;
+  border: 1px dashed white;
+}
+#code.error {
+  animation: flashingBorder 0.2s infinite ease;
+}
+
+@keyframes flashingBorder {
+  from {
+    border: 2px dashed red;
+  }
+
+  50% {
+    border: 2px dashed aqua;
+  }
+  to {
+    border: 2px dashed red;
+  }
+}
