@@ -1,0 +1,97 @@
+.square {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: inline-block;
+  margin: 0.1em;
+  cursor: cell;
+}
+
+.square[title="0"] {
+  background-color: #3b873b;
+}
+.square[title="1"] {
+  background-color: #fc5;
+}
+.square[title="2"] {
+  background-color: #08a;
+}
+#container {
+  display: grid;
+  grid-gap: 0.1em;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  padding: 0.5em;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+html {
+  height: 100vh;
+}
+
+#brush {
+  position: fixed;
+  display: none;
+  width: 2em;
+  height: 2em;
+  fill: #3b873b;
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+#top-bar {
+  color: white;
+  width: 100%;
+  padding: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: rgb(97, 39, 99);
+  box-shadow: 0 3px 5px black;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 1.2em;
+}
+
+#code__hook {
+  height: 1.2em;
+
+  position: relative;
+}
+#code__dog {
+  height: 140%;
+}
+#code {
+  height: 1.5em;
+  width: 28em;
+  resize: both;
+  overflow: auto;
+  position: absolute;
+  background-color: rgb(97, 39, 99);
+  color: white;
+  padding: 0.5em;
+  font-size: 70%;
+  border: 1px dashed white;
+}
+#code.error {
+  animation: flashingBorder 0.2s infinite ease;
+}
+
+@keyframes flashingBorder {
+  from {
+    border: 2px dashed red;
+  }
+
+  50% {
+    border: 2px dashed aqua;
+  }
+  to {
+    border: 2px dashed red;
+  }
+}

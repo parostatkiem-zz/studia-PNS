@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="dog.png" />
+    <title>Purple Normandy Schnauzer | Map editor</title>
+  </head>
+  <body>
+    <svg
+      id="brush"
+      enable-background="new 0 0 512 454.633"
+      height="454.633px"
+      id="Layer_1"
+      version="1.1"
+      viewBox="0 0 512 454.633"
+      width="512px"
+      xml:space="preserve"
+    >
+      <g id="meanicons_x5F_14">
+        <g>
+          <path
+            d="M202.271,243.812c-9.741,10.73-12.13,18.428-24.884,38.588c8.237,5.752,24.104,19.055,35.095,41.959    c21.953-12.592,32.188-14.514,43.821-24.309C332.24,236.092,518.244,6.836,511.839,0.204    C505.073-6.846,269.135,170.472,202.271,243.812z"
+          />
+          <path
+            d="M155.442,300.209c-32.998-5.832-65.547,15.028-87.288,67.147c-21.772,52.115-60.622,72.981-68.153,71.705    c40.553,14.67,164.202,52.194,194.939-90.655C181.903,314.146,155.442,300.209,155.442,300.209z"
+          />
+        </g>
+      </g>
+      <g id="Layer_1_1_" />
+    </svg>
+    <section id="top-bar">
+      <form onsubmit="HandleMapParamsChange(); return false;">
+        <input placeholder="width" value="10" type="number" name="width" />
+        <input placeholder="height" value="15" type="number" name="height" />
+        <input type="submit" value="Zapisz" />
+      </form>
+      <div id="code__hook">
+        <img id="code__dog" src="dog.png" />
+        <textarea
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          id="code"
+          onchange="HandleCodeChange(event);"
+        >
+Tutaj pojawi się wygenerowany kod mapy</textarea
+        >
+      </div>
+
+      <div id="typeSelector">
+        <label for="type">Typ terenu: </label>
+        <select name="type" onchange="HandleTypeChange(event);" value="0">
+          <option value="0">Trawa</option>
+          <option value="1">Piasek</option>
+          <option value="2">Woda</option>
+        </select>
+      </div>
+    </section>
+
+    <div
+      id="container"
+      onmouseover="HandleContainerHover(event);"
+      onmouseout="HandleContainerLeave(event);"
+      onmousemove="HandleContainerMove(event);"
+    ></div>
+  </body>
+</html>
