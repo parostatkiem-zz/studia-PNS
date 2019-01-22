@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class MapRenderer :MonoBehaviour
 {
+    //ObjectRenderer objectRenderer;
+
     private float separator = 0.07f;
     private float square_xz = 1f;
     private float square_y = 0.21f;
+    private float scale = 1f;
 
     private const float tableX = 10f;
     private const float tableZ = 8.5f; // table size is 10
@@ -15,12 +18,15 @@ public class MapRenderer :MonoBehaviour
     private const float tableStartZ = -0.75f - tableZ / 2f;
 
     private Assets.Scripts.Map.Map map;
+    private List<Assets.Scripts.Map.MapObject> listOfMapObjects;
     private List<Transform> prefabs;
 
-    public MapRenderer(Assets.Scripts.Map.Map map, Transform prefab_grass, Transform prefab_water, Transform prefab_sand)
+    public MapRenderer(Assets.Scripts.Map.Map map, Transform prefab_grass, Transform prefab_water, 
+        Transform prefab_sand, List<Assets.Scripts.Map.MapObject> listOfMapObjects)
     {
         this.map = map;
-     
+        this.listOfMapObjects = listOfMapObjects;
+        
         prefabs = new List<Transform> { prefab_grass,prefab_water,prefab_sand};
        
     }
@@ -28,7 +34,7 @@ public class MapRenderer :MonoBehaviour
     public void RenderTheMap()
     {
         int mapElementIndex = 0;
-        float scale = 1f;
+
 
         //set default map size
         float heightOfElements = (float)map.height * (square_xz + separator);
@@ -58,6 +64,8 @@ public class MapRenderer :MonoBehaviour
         {
             for (var y = 0; y < map.height; y++, mapElementIndex++)
             {
+                ///map element rendering
+                ///
                 var elementInstance= Instantiate(
                     prefabs[(int)map.mapElements[mapElementIndex].terrainType],       
                     new Vector3(
@@ -74,9 +82,23 @@ public class MapRenderer :MonoBehaviour
                     );
 
                 elementInstance.GetComponent<MapElement>().mapCords = new Vector2(x, y);
-             
+
+                ///map object rendering
+                ///
+                if(map.mapElements[mapElementIndex].mapObject != null && !(map.mapElements[mapElementIndex].mapObject is Assets.Scripts.Map.EmptyField))
+                {
+                    map.mapElements[mapElementIndex].mapObject.x = x;
+                    map.mapElements[mapElementIndex].mapObject.y = y;
+                    this.listOfMapObjects.Add(map.mapElements[mapElementIndex].mapObject);
+                }
+
             }
         }
+
+        //this.objectRenderer = new ObjectRenderer(this.map, this.listOfMapObjects, this.scale, this.square_xz, this.separator);
+        //this.objectRenderer.RenderTheMapObjects();
     }
+
+
    
 }

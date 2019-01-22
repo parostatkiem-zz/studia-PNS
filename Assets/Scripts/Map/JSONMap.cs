@@ -43,6 +43,9 @@ namespace Assets.Scripts.Map
     [JsonConverter(typeof(MapObjectConverter))]
     public abstract class MapObject
     {
+        public int ownerID { get; set; }
+        public int x { get; set; }
+        public int y { get; set; }
         public int objType { get; set; }
         public bool fraction { get; set; }
         public string name { get; set; }
@@ -63,5 +66,6 @@ namespace Assets.Scripts.Map
         public int height;
         public int width;
         public MapElement[] mapElements;
+        
     }
 }

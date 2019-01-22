@@ -9,10 +9,17 @@ public class Global : MonoBehaviour
 {
 
     // Main Map object with all informations about current map states
-     Assets.Scripts.Map.Map gameMap;
+    private Assets.Scripts.Map.Map gameMap;
+    private List<Assets.Scripts.Map.MapObject> listOfMapObjects = new List<Assets.Scripts.Map.MapObject>();
     public Transform prefab_grass,prefab_water,prefab_sand;
    
-
+    public Assets.Scripts.Map.MapObject ListOfMapObjects
+    {
+        get
+        {
+            return this.ListOfMapObjects;
+        }
+    }
     public Assets.Scripts.Map.Map GameMap{
         get{
             return this.gameMap;
@@ -26,7 +33,7 @@ public class Global : MonoBehaviour
         this.gameMap = Assets.Scripts.Map.MapLoader.LoadMapFromJson(Assets.Scripts.Map.GlobalMapConfig.JsonMapPath);
 
         //  Instantiate(prefab_grass, new Vector3(0, 0.5f, 0), Quaternion.identity);
-        var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand);
+        var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand, listOfMapObjects);
         mapRenderer.RenderTheMap();
         // filter.mesh = MapRenderer.RenderTheMap();
     }
