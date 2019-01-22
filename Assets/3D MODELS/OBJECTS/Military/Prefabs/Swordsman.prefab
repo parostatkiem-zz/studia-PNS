@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4189959306879028}
   - component: {fileID: 33316733837773928}
   - component: {fileID: 23654845875125620}
-  - component: {fileID: 95802518347111648}
   m_Layer: 0
   m_Name: Swordsman
   m_TagString: Untagged
@@ -35,9 +34,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569032269753690}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.4435701, y: 0.326, z: 0.04591906}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -3.3062482, y: 0.384, z: -1.837144}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,9 +56,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: eed415785aae393458c7b4cc7c31ace5, type: 2}
-  - {fileID: 2100002, guid: adfebda37bf1df74a99d05097566313d, type: 3}
-  - {fileID: 2100004, guid: adfebda37bf1df74a99d05097566313d, type: 3}
+  - {fileID: 2100000, guid: bd35e0ac092abbf43b7de2fdab63d6e3, type: 2}
+  - {fileID: 2100000, guid: 9064b8dcdd93a154c8624d96cfa54ff7, type: 3}
+  - {fileID: 2100002, guid: 9064b8dcdd93a154c8624d96cfa54ff7, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,22 +84,4 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569032269753690}
-  m_Mesh: {fileID: 4300000, guid: adfebda37bf1df74a99d05097566313d, type: 3}
---- !u!95 &95802518347111648
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569032269753690}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: adfebda37bf1df74a99d05097566313d, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_Mesh: {fileID: 4300000, guid: 100c2f19b89103e4fa8458d6f2b23cd7, type: 3}
