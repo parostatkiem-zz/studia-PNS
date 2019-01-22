@@ -36,32 +36,3 @@ sysinfo.txt
 *.unitypackage
 
 Assets/Plugins/*
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/netstandard2.0/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/netstandard1.3/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/netstandard1.0/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/net45/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/net40/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/net35/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/lib/net20/Newtonsoft.Json.xml
-Packages/Newtonsoft.Json.12.0.1-beta1/Newtonsoft.Json.12.0.1-beta1.nupkg
-Packages/Newtonsoft.Json.12.0.1-beta1/LICENSE.md
-Packages/Newtonsoft.Json.12.0.1-beta1/.signature.p7s
-Assets/Scripts/MapRender/ObjectRenderer.cs.meta
-Assets/Scripts/MapRender/ObjectRenderer.cs
-Assets/Plugins.meta
-Assets/PhotonChatApi.meta
-Assets/PhotonChat.meta
-Assets/Networking.meta
-Assets/Maps/5.json.meta
-Assets/Maps/4.json.meta
-Assets/Maps/3.json.meta
-Assets/Editor/PhotonChat.meta
-Assets/Editor.meta
-Assets/Demo Chat/Resources/OpenSans.meta
-Assets/Demo Chat/Resources/BitstreamVeraSans.meta
-Assets/Demo Chat/Resources.meta
-Assets/Demo Chat.meta
-Assets/Maps/2.json.meta
-Assets/Editor/PhotonChat/Newtonsoft.Json.dll.meta
