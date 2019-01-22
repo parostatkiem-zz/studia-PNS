@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MapRenderer :MonoBehaviour
 {
-    ObjectRenderer objectRenderer;
+    //ObjectRenderer objectRenderer;
 
     private float separator = 0.07f;
     private float square_xz = 1f;
@@ -95,7 +95,8 @@ public class MapRenderer :MonoBehaviour
             }
         }
 
-        this.objectRenderer = new ObjectRenderer(this.map, this.listOfMapObjects, this.scale, this.square_xz, this.separator);
+        //this.objectRenderer = new ObjectRenderer(this.map, this.listOfMapObjects, this.scale, this.square_xz, this.separator);
+        //this.objectRenderer.RenderTheMapObjects();
     }
 
 
