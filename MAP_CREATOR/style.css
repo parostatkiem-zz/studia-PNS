@@ -7,13 +7,13 @@
   cursor: cell;
 }
 
-.square[title="0"] {
+.square[title='0'] {
   background-color: #3b873b;
 }
-.square[title="1"] {
+.square[title='2'] {
   background-color: #fc5;
 }
-.square[title="2"] {
+.square[title='1'] {
   background-color: #08a;
 }
 #container {
@@ -28,7 +28,7 @@
 body {
   height: 100%;
   margin: 0;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 html {
   height: 100vh;
