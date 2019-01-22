@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: ac092076d26d2434dbbca90edb339cb7
+guid: 9064b8dcdd93a154c8624d96cfa54ff7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Podstawka
-    2100002: Kartona
-    2100004: Material
+    2100000: Material
+    2100002: Podstawka
+    2100004: Kartona
     2300000: //RootNode
     3300000: //RootNode
     4300000: Projekt
