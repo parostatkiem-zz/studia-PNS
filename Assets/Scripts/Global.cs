@@ -10,8 +10,9 @@ public class Global : MonoBehaviour
 
     // Main Map object with all informations about current map states
     private Assets.Scripts.Map.Map gameMap;
+    private ObjectRenderer objectRenderer = new ObjectRenderer();
     private List<Assets.Scripts.Map.MapObject> listOfMapObjects = new List<Assets.Scripts.Map.MapObject>();
-    public Transform prefab_grass,prefab_water,prefab_sand;
+    public Transform prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
 
     private int userTurn = 0;
    
@@ -34,8 +35,11 @@ public class Global : MonoBehaviour
         gameObject.AddComponent<MeshRenderer>();
         this.gameMap = Assets.Scripts.Map.MapLoader.LoadMapFromJson(Assets.Scripts.Map.GlobalMapConfig.JsonMapPath);
 
+        //set prefabs for objectRenderer
+        objectRenderer.setPrefabs(prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle);
+
         //  Instantiate(prefab_grass, new Vector3(0, 0.5f, 0), Quaternion.identity);
-        var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand, listOfMapObjects);
+        var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand, listOfMapObjects, objectRenderer);
         mapRenderer.RenderTheMap();
         // filter.mesh = MapRenderer.RenderTheMap();
     }

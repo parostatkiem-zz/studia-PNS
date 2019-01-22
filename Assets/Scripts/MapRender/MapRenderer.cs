@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MapRenderer :MonoBehaviour
 {
-    //ObjectRenderer objectRenderer;
+    
 
     private float separator = 0.07f;
     private float square_xz = 1f;
@@ -20,12 +20,15 @@ public class MapRenderer :MonoBehaviour
     private Assets.Scripts.Map.Map map;
     private List<Assets.Scripts.Map.MapObject> listOfMapObjects;
     private List<Transform> prefabs;
+    private ObjectRenderer objectRenderer;
 
-    public MapRenderer(Assets.Scripts.Map.Map map, Transform prefab_grass, Transform prefab_water, 
-        Transform prefab_sand, List<Assets.Scripts.Map.MapObject> listOfMapObjects)
+    public MapRenderer(Assets.Scripts.Map.Map map, 
+        Transform prefab_grass, Transform prefab_water, Transform prefab_sand,
+        List<Assets.Scripts.Map.MapObject> listOfMapObjects, ObjectRenderer objectRenderer)
     {
         this.map = map;
         this.listOfMapObjects = listOfMapObjects;
+        this.objectRenderer = objectRenderer;
         
         prefabs = new List<Transform> { prefab_grass,prefab_water,prefab_sand};
        
@@ -90,13 +93,19 @@ public class MapRenderer :MonoBehaviour
                     map.mapElements[mapElementIndex].mapObject.x = x;
                     map.mapElements[mapElementIndex].mapObject.y = y;
                     this.listOfMapObjects.Add(map.mapElements[mapElementIndex].mapObject);
+
+                    this.objectRenderer.RenderObjectAtPos(
+                        startXOfMap + x * mapElement, 
+                        0.5f, 
+                        startZOfMap + y * mapElement,
+                        map.mapElements[mapElementIndex].mapObject.objType
+                        );
                 }
 
             }
         }
 
-        //this.objectRenderer = new ObjectRenderer(this.map, this.listOfMapObjects, this.scale, this.square_xz, this.separator);
-        //this.objectRenderer.RenderTheMapObjects();
+        this.objectRenderer.setParameters(this.map, this.listOfMapObjects, this.scale, this.square_xz, this.separator);
     }
 
 

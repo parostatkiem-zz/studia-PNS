@@ -1505,6 +1505,16 @@ MonoBehaviour:
     type: 2}
   prefab_sand: {fileID: 4322110849220920, guid: cb665b263ce5446da839415be34f769f,
     type: 2}
+  prefab_archer: {fileID: 4233761448544200, guid: c7b01666a7c1bfa44b330bbd26341905,
+    type: 2}
+  prefab_swordsman: {fileID: 4189959306879028, guid: 67c93e7515ab8834289de16b62cda409,
+    type: 2}
+  prefab_mutant: {fileID: 4854774834311506, guid: a46c8cf2bc4d6b94d9cb9a7cfba2f7ab,
+    type: 2}
+  prefab_horseman: {fileID: 4161744626978084, guid: 932b75a77a75dfc45a53062703cb7806,
+    type: 2}
+  prefab_castle: {fileID: 4854774834311506, guid: a46c8cf2bc4d6b94d9cb9a7cfba2f7ab,
+    type: 2}
 --- !u!4 &1434862254
 Transform:
   m_ObjectHideFlags: 0
