@@ -12,6 +12,8 @@ public class Global : MonoBehaviour
     private Assets.Scripts.Map.Map gameMap;
     private List<Assets.Scripts.Map.MapObject> listOfMapObjects = new List<Assets.Scripts.Map.MapObject>();
     public Transform prefab_grass,prefab_water,prefab_sand;
+
+    private int userTurn = 0;
    
     public Assets.Scripts.Map.MapObject ListOfMapObjects
     {
@@ -42,4 +44,10 @@ public class Global : MonoBehaviour
 	void Update () {
 		
 	}
+
+    public void endTurn()
+    {
+        this.userTurn = (this.userTurn + 1) % 2;
+        Debug.Log(this.userTurn);
+    }
 }
