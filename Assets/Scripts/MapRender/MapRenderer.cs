@@ -80,7 +80,7 @@ public class MapRenderer :MonoBehaviour
                 //scale all map elements
                 elementInstance.transform.localScale = new Vector3(
                     square_xz * scale,
-                    square_y * scale,
+                    square_y ,
                     square_xz * scale
                     );
 

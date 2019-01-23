@@ -44,7 +44,7 @@ public class ObjectRenderer : MonoBehaviour
                    prefabs[objTypeID-2],
                    new Vector3(
                        x: xPos,
-                       y: 0.28f,
+                       y: 0.35f,
                        z: zPos),
                    prefabs[objTypeID - 2].rotation);
 
