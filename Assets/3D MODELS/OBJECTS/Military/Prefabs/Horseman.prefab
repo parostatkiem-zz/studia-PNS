@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4161744626978084}
   - component: {fileID: 33464788061013964}
   - component: {fileID: 23585458125519262}
+  - component: {fileID: 114458605101198522}
+  - component: {fileID: 65591214323531298}
   m_Layer: 0
   m_Name: Horseman
   m_TagString: Untagged
@@ -85,3 +87,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305390922739480}
   m_Mesh: {fileID: 4300000, guid: 9064b8dcdd93a154c8624d96cfa54ff7, type: 3}
+--- !u!65 &65591214323531298
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305390922739480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0034133529, y: 0.004213628, z: 0.0070376196}
+  m_Center: {x: -0.00023836175, y: 0.00017287313, z: 0.00090289174}
+--- !u!114 &114458605101198522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305390922739480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cde6ab583594b9c8e3e263c37f37a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapPosition: {x: 0, y: 0}

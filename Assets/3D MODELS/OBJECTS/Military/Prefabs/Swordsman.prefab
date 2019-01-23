@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4189959306879028}
   - component: {fileID: 33316733837773928}
   - component: {fileID: 23654845875125620}
+  - component: {fileID: 114303321753277014}
+  - component: {fileID: 65785360216022264}
   m_Layer: 0
   m_Name: Swordsman
   m_TagString: Untagged
@@ -85,3 +87,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569032269753690}
   m_Mesh: {fileID: 4300000, guid: 100c2f19b89103e4fa8458d6f2b23cd7, type: 3}
+--- !u!65 &65785360216022264
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1569032269753690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0033240407, y: 0.0030652743, z: 0.007063653}
+  m_Center: {x: -0.00011680637, y: 0.000015357176, z: -0.00005688519}
+--- !u!114 &114303321753277014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1569032269753690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cde6ab583594b9c8e3e263c37f37a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapPosition: {x: 0, y: 0}

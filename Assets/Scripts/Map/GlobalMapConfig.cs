@@ -8,7 +8,7 @@ namespace Assets.Scripts.Map
 {
     static class GlobalMapConfig
     {
-        private static string jsonMapPath = "Assets/Maps/1.json";
+        private static string jsonMapPath = "Assets/Maps/5.json";
 
         public static string JsonMapPath
         {

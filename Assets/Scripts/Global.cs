@@ -15,6 +15,8 @@ public class Global : MonoBehaviour
     public Transform prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
 
     private int userTurn = 0;
+
+    private Assets.Scripts.Map.MapObject highlightedObject;
    
     public Assets.Scripts.Map.MapObject ListOfMapObjects
     {
@@ -27,6 +29,42 @@ public class Global : MonoBehaviour
         get{
             return this.gameMap;
         }
+    }
+
+    public void HandleMapElementClick(Vector2 mapPos)
+    {
+        if (this.highlightedObject==null)
+        {
+            Debug.Log("no figure is selected");
+            return;
+        }
+
+        var mapObjectAtPos = listOfMapObjects.FindLast(obj => (float)obj.x == mapPos.x && (float)obj.y == mapPos.y);
+
+        if (mapObjectAtPos == null)
+        {
+            // something is standing in this place
+            Debug.Log("something is standing in this place");
+            return;
+        }
+
+        highlightedObject.x = (int)mapPos.x;
+        highlightedObject.y = (int)mapPos.y;
+    }
+
+    public void HandleFigureHighlight(Vector2 mapPos)
+    { 
+        var selectedObj = listOfMapObjects.FindLast(obj => (float)obj.x == mapPos.x && (float)obj.y  == mapPos.y);
+        if (selectedObj == null)
+        {
+            return;
+        }
+        if (selectedObj == highlightedObject)
+        {
+            // unnselect
+            highlightedObject = null;
+        }
+
     }
 
     // Use this for initialization

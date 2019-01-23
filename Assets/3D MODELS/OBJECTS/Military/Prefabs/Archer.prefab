@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4233761448544200}
   - component: {fileID: 33215881724764600}
   - component: {fileID: 23470890147676634}
+  - component: {fileID: 114715755323686952}
+  - component: {fileID: 65243794108084324}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -85,3 +87,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1371833172787084}
   m_Mesh: {fileID: 4300000, guid: e90da2bddd93d7848a3d8ae3e2f1bf50, type: 3}
+--- !u!65 &65243794108084324
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371833172787084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002986268, y: 0.0032379953, z: 0.0071224896}
+  m_Center: {x: -0.00018562346, y: -0.000254319, z: 0.00056603376}
+--- !u!114 &114715755323686952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371833172787084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cde6ab583594b9c8e3e263c37f37a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

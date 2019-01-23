@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4854774834311506}
   - component: {fileID: 33470863518932652}
   - component: {fileID: 23981451563216808}
+  - component: {fileID: 114152097693346426}
+  - component: {fileID: 65833026864234418}
   m_Layer: 0
   m_Name: Mutant
   m_TagString: Untagged
@@ -85,3 +87,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1132970684592846}
   m_Mesh: {fileID: 4300000, guid: 0cb04ea31b90dd24da457ca95909edb0, type: 3}
+--- !u!65 &65833026864234418
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132970684592846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0035367585, y: 0.0028318453, z: 0.006628953}
+  m_Center: {x: -0.00019139952, y: -0.0001478439, z: 0.00044539024}
+--- !u!114 &114152097693346426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132970684592846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cde6ab583594b9c8e3e263c37f37a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapPosition: {x: 0, y: 0}

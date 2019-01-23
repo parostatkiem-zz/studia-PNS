@@ -98,7 +98,9 @@ public class MapRenderer :MonoBehaviour
                         startXOfMap + x * mapElement, 
                         0.5f, 
                         startZOfMap + y * mapElement,
-                        map.mapElements[mapElementIndex].mapObject.objType
+                        map.mapElements[mapElementIndex].mapObject.objType,
+                         map.mapElements[mapElementIndex].mapObject.ownerID,
+                         new Vector2(x, y)
                         );
                 }
 

@@ -15,6 +15,7 @@ public class MapElement : MonoBehaviour {
 	void Update () {
 		
 	}
+  
     private void OnMouseEnter()
     {
         transform.position = new Vector3(transform.position.x, 0.05f, transform.position.z); 
@@ -27,6 +28,9 @@ public class MapElement : MonoBehaviour {
 
     private void OnMouseDown()
     {
+      
+        Global other = (Global)GameObject.Find("GLOBAL").GetComponent(typeof(Global));
         Debug.Log("You clicked the map element of with coordinates: "+mapCords.x+", "+mapCords.y);
+        other.HandleMapElementClick(mapCords);
     }
 }

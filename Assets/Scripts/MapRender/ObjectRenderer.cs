@@ -38,7 +38,7 @@ public class ObjectRenderer : MonoBehaviour
         this.scale = scale;
     }
 
-    public void RenderObjectAtPos(float xPos, float yPos, float zPos, int objTypeID)
+    public void RenderObjectAtPos(float xPos, float yPos, float zPos, int objTypeID, int ownerID,Vector2 mapPosition)
     {
         var elementInstance = Instantiate(
                    prefabs[objTypeID-2],
@@ -47,6 +47,20 @@ public class ObjectRenderer : MonoBehaviour
                        y: 0.35f,
                        z: zPos),
                    prefabs[objTypeID - 2].rotation);
+
+      
+        Color highlightColor=Color.yellow;
+        if(ownerID==0)
+        {
+            highlightColor = Color.red;
+        }
+
+        if (ownerID == 1)
+        {
+            highlightColor = Color.blue;
+        }
+        elementInstance.GetComponent<Renderer>().material.SetColor("_Color",highlightColor);
+        elementInstance.GetComponent<militaryBehavior>().mapPosition = mapPosition;
 
         //elementInstance.GetComponent<MapElement>().mapCords = new Vector2(x, y);
     }
