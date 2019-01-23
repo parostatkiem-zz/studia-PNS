@@ -62,7 +62,8 @@ public class ObjectRenderer : MonoBehaviour
         {
             highlightColor = Color.cyan;
         }
-        elementInstance.GetComponent<Renderer>().material.SetColor("_Color",highlightColor);
+        var coloredMaterial = elementInstance.GetComponent<Renderer>().materials.FirstOrDefault(m => m.name == "Podstawka (Instance)");
+        if (coloredMaterial != null) { coloredMaterial.SetColor("_Color", highlightColor); }
         elementInstance.GetComponent<militaryBehavior>().mapPosition = mapPosition;
         elementInstance.GetComponent<militaryBehavior>().realPosition = elementInstance.transform.position;
         var children = elementInstance.GetComponentsInChildren<Transform>();
