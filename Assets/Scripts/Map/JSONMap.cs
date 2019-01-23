@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using UnityEngine;
 
 namespace Assets.Scripts.Map
 {
@@ -43,6 +44,8 @@ namespace Assets.Scripts.Map
     [JsonConverter(typeof(MapObjectConverter))]
     public abstract class MapObject
     {
+        public GameObject instance { get; set; }
+        public bool isHighlighted { get; set; }
         public int ownerID { get; set; }
         public int x { get; set; }
         public int y { get; set; }
