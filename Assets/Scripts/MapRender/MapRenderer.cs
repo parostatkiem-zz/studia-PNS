@@ -62,7 +62,7 @@ public class MapRenderer :MonoBehaviour
         //set start point for prefab 
         float startXOfMap = ( tableStartX + (tableX - (widthOfElements * scale)) / 2 ) + mapElement / 2;
         float startZOfMap = ( tableStartZ + (tableZ - (heightOfElements * scale)) / 2 ) + mapElement / 2;
-
+       
         for (var x = 0; x < map.width; x++)
         {
             for (var y = 0; y < map.height; y++, mapElementIndex++)
@@ -86,9 +86,10 @@ public class MapRenderer :MonoBehaviour
 
                 elementInstance.GetComponent<MapElement>().mapCords = new Vector2(x, y);
 
+
                 ///map object rendering
                 ///
-                if(map.mapElements[mapElementIndex].mapObject != null && !(map.mapElements[mapElementIndex].mapObject is Assets.Scripts.Map.EmptyField))
+                if (map.mapElements[mapElementIndex].mapObject != null && !(map.mapElements[mapElementIndex].mapObject is Assets.Scripts.Map.EmptyField))
                 {
                     map.mapElements[mapElementIndex].mapObject.x = x;
                     map.mapElements[mapElementIndex].mapObject.y = y;
@@ -107,7 +108,13 @@ public class MapRenderer :MonoBehaviour
             }
         }
 
-        this.objectRenderer.setParameters(this.map, this.listOfMapObjects, this.scale, this.square_xz, this.separator);
+        this.objectRenderer.setParameters(
+             this.map,
+             this.listOfMapObjects,
+             this.scale, 
+             this.square_xz,
+             this.separator,
+             new Vector2(startXOfMap,startZOfMap));
     }
 
 

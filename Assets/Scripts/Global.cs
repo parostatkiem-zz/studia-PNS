@@ -11,9 +11,9 @@ public class Global : MonoBehaviour
     // Main Map object with all informations about current map states
     private Assets.Scripts.Map.Map gameMap;
     private ObjectRenderer objectRenderer = new ObjectRenderer();
-    private List<Assets.Scripts.Map.MapObject> listOfMapObjects = new List<Assets.Scripts.Map.MapObject>();
+    public List<Assets.Scripts.Map.MapObject> listOfMapObjects { get; set; } 
     public Transform prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
-
+ 
     private int userTurn = 0;
 
     private Assets.Scripts.Map.MapObject highlightedObject;
@@ -33,7 +33,7 @@ public class Global : MonoBehaviour
 
     public void HandleMapElementClick(Vector2 mapPos)
     {
-        if (this.highlightedObject==null)
+        if (highlightedObject==null)
         {
             Debug.Log("no figure is selected");
             return;
@@ -41,45 +41,57 @@ public class Global : MonoBehaviour
 
         var mapObjectAtPos = listOfMapObjects.FindLast(obj => (float)obj.x == mapPos.x && (float)obj.y == mapPos.y);
 
-        if (mapObjectAtPos == null)
+        if (mapObjectAtPos != null)
         {
             // something is standing in this place
             Debug.Log("something is standing in this place");
             return;
         }
-
         highlightedObject.x = (int)mapPos.x;
         highlightedObject.y = (int)mapPos.y;
+        objectRenderer.UpdateObjects();
     }
 
-    public void HandleFigureHighlight(Vector2 mapPos)
+    public void HandleFigureHighlight(Assets.Scripts.Map.MapObject selectedObj)
     { 
-        var selectedObj = listOfMapObjects.FindLast(obj => (float)obj.x == mapPos.x && (float)obj.y  == mapPos.y);
         if (selectedObj == null)
         {
+            Debug.LogError("Selected object not found in the list");
             return;
         }
+
         if (selectedObj == highlightedObject)
         {
-            // unnselect
+            Debug.Log("Unselecting object");
+            highlightedObject.isHighlighted = false;
             highlightedObject = null;
+            objectRenderer.UpdateObjects();
+            return;
         }
+        highlightedObject = selectedObj;
+        foreach(var obj in listOfMapObjects)
+        {
+            obj.isHighlighted = false;
+        }
+        highlightedObject.isHighlighted = true;
+
+        objectRenderer.UpdateObjects();
 
     }
 
     // Use this for initialization
     void Start () {
-       var filter= gameObject.AddComponent<MeshFilter>();
+        listOfMapObjects= new List<Assets.Scripts.Map.MapObject>();
+        var filter= gameObject.AddComponent<MeshFilter>();
         gameObject.AddComponent<MeshRenderer>();
         this.gameMap = Assets.Scripts.Map.MapLoader.LoadMapFromJson(Assets.Scripts.Map.GlobalMapConfig.JsonMapPath);
 
         //set prefabs for objectRenderer
         objectRenderer.setPrefabs(prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle);
 
-        //  Instantiate(prefab_grass, new Vector3(0, 0.5f, 0), Quaternion.identity);
         var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand, listOfMapObjects, objectRenderer);
         mapRenderer.RenderTheMap();
-        // filter.mesh = MapRenderer.RenderTheMap();
+
     }
 	
 	// Update is called once per frame
