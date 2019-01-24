@@ -35,7 +35,7 @@ namespace Assets.Scripts.Map
 
     public class HorseMan : MapObject, IMilitaryUnit
     {
-        float movementRange =3.75f;
+        float movementRange =3.9f;
     public float MovementRange { get { return movementRange; } set { movementRange = value; } }
 
     }

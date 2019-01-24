@@ -11,6 +11,7 @@ public class Global : MonoBehaviour
     // Main Map object with all informations about current map states
     private Assets.Scripts.Map.Map gameMap;
     private ObjectRenderer objectRenderer = new ObjectRenderer();
+    private CameraBehavior cameraBehavior;
     public List<Assets.Scripts.Map.MapObject> listOfMapObjects { get; set; } 
     public Transform prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
 
@@ -25,6 +26,7 @@ public class Global : MonoBehaviour
         }
     }
 
+    public Camera mainCamera;
 
 
     private Assets.Scripts.Map.MapObject highlightedObject;
@@ -75,6 +77,7 @@ public class Global : MonoBehaviour
         if (selectedObj == highlightedObject)
         {
             Debug.Log("Unselecting object");
+            cameraBehavior.ResetCamera();
             highlightedObject.isHighlighted = false;
             highlightedObject = null;
             objectRenderer.UpdateObjects();
@@ -85,6 +88,9 @@ public class Global : MonoBehaviour
             // player wants to select the unit he doesn't own 
             return;
         }
+
+        cameraBehavior.SetCameraOverTransform(selectedObj.instance.transform);
+
         highlightedObject = selectedObj;
         foreach(var obj in listOfMapObjects)
         {
@@ -94,11 +100,13 @@ public class Global : MonoBehaviour
 
         objectRenderer.UpdateObjects();
 
+
     }
 
     // Use this for initialization
     void Start () {
-        listOfMapObjects= new List<Assets.Scripts.Map.MapObject>();
+        cameraBehavior = mainCamera.GetComponent<CameraBehavior>();
+        listOfMapObjects = new List<Assets.Scripts.Map.MapObject>();
         var filter= gameObject.AddComponent<MeshFilter>();
         gameObject.AddComponent<MeshRenderer>();
         this.gameMap = Assets.Scripts.Map.MapLoader.LoadMapFromJson(Assets.Scripts.Map.GlobalMapConfig.JsonMapPath);
@@ -109,6 +117,7 @@ public class Global : MonoBehaviour
         var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand, listOfMapObjects, objectRenderer);
         mapRenderer.RenderTheMap();
         UserTurn = 0;
+      
     }
 	
 	// Update is called once per frame
@@ -118,6 +127,7 @@ public class Global : MonoBehaviour
 
     public void endTurn()
     {
+        cameraBehavior.ResetCamera();
         var numberOfPlayers = 2;
         this.UserTurn = (this.UserTurn + 1) % numberOfPlayers;
         foreach (var obj in listOfMapObjects)
