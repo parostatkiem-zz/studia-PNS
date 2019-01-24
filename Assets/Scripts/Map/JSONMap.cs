@@ -21,18 +21,22 @@ namespace Assets.Scripts.Map
 
     }
 
-    public class Warrior : MapObject
+    public class Warrior : MapObject,IMilitaryUnit
     {
-
+        float movementRange = 1.5f;
+        public float MovementRange { get { return movementRange; } set { movementRange = value; } }
     }
 
-    public class Archer : MapObject
+    public class Archer : MapObject, IMilitaryUnit
     {
-
+        float movementRange = 1.5f;
+        public float MovementRange { get { return movementRange; } set { movementRange = value; } }
     }
 
-    public class HorseMan : MapObject
+    public class HorseMan : MapObject, IMilitaryUnit
     {
+        float movementRange =3.9f;
+    public float MovementRange { get { return movementRange; } set { movementRange = value; } }
 
     }
 
@@ -70,5 +74,9 @@ namespace Assets.Scripts.Map
         public int width;
         public MapElement[] mapElements;
         
+    }
+    public interface IMilitaryUnit
+    {
+        float MovementRange { get; set; }
     }
 }

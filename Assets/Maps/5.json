@@ -20,7 +20,7 @@
       "terrainType": 0,
       "mapObject": {
         "ownerID": 1,
-        "objType": 2,
+        "objType": 5,
         "attack": 15
       }
     },
@@ -1163,7 +1163,7 @@
       "terrainType": 0,
       "mapObject": {
         "ownerID": 1,
-        "objType": 2,
+        "objType": 5,
         "attack": 15
       }
     },
@@ -1201,7 +1201,7 @@
       "terrainType": 0,
       "mapObject": {
         "ownerID": 0,
-        "objType": 2,
+        "objType": 5,
         "attack": 15
       }
     },

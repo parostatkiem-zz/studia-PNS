@@ -350,12 +350,13 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!81 &534669903
 AudioListener:
@@ -410,13 +411,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.1337327, y: -0.8460621, z: 0.25092062, w: 0.45092502}
+  m_LocalRotation: {x: 0.13280672, y: -0.8477189, z: 0.2514116, w: 0.44780266}
   m_LocalPosition: {x: 7.48, y: 3.04, z: 3.1399999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 33.038002, y: -123.88801, z: 0}
+  m_LocalEulerAnglesHint: {x: 33.038002, y: -124.31, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +430,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 2aa9fc3f6c6c54e7aad1b70a61183166, type: 2}
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ee0d61662a44beab23d9f2d682dc2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &603838978
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +809,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1263656352}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.21, y: 1.4555185, z: -1.45}
+  m_LocalPosition: {x: 6.21, y: 1.4555185, z: -1.53}
   m_LocalScale: {x: 1, y: 0.21, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -883,6 +895,7 @@ MonoBehaviour:
     type: 2}
   prefab_castle: {fileID: 4854774834311506, guid: a46c8cf2bc4d6b94d9cb9a7cfba2f7ab,
     type: 2}
+  mainCamera: {fileID: 534669904}
 --- !u!4 &1434862254
 Transform:
   m_ObjectHideFlags: 0
