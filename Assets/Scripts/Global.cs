@@ -13,8 +13,19 @@ public class Global : MonoBehaviour
     private ObjectRenderer objectRenderer = new ObjectRenderer();
     public List<Assets.Scripts.Map.MapObject> listOfMapObjects { get; set; } 
     public Transform prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
- 
+
     private int userTurn = 0;
+
+    private int UserTurn 
+    {
+        get{ return userTurn; }
+        set
+        {
+            userTurn = value;
+        }
+    }
+
+
 
     private Assets.Scripts.Map.MapObject highlightedObject;
    
@@ -68,6 +79,11 @@ public class Global : MonoBehaviour
             objectRenderer.UpdateObjects();
             return;
         }
+        if ( selectedObj.ownerID != userTurn)
+        {
+            // player wants to select the unit he doesn't own 
+            return;
+        }
         highlightedObject = selectedObj;
         foreach(var obj in listOfMapObjects)
         {
@@ -91,7 +107,7 @@ public class Global : MonoBehaviour
 
         var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand, listOfMapObjects, objectRenderer);
         mapRenderer.RenderTheMap();
-
+        UserTurn = 0;
     }
 	
 	// Update is called once per frame
@@ -101,7 +117,13 @@ public class Global : MonoBehaviour
 
     public void endTurn()
     {
-        this.userTurn = (this.userTurn + 1) % 2;
+        var numberOfPlayers = 2;
+        this.UserTurn = (this.UserTurn + 1) % numberOfPlayers;
+        foreach (var obj in listOfMapObjects)
+        {
+            obj.isHighlighted = false;
+        }
+        objectRenderer.UpdateObjects();
         Debug.Log(this.userTurn);
     }
 }
