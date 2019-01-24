@@ -58,13 +58,14 @@ public class Global : MonoBehaviour
             Debug.Log("something is standing in this place");
             return;
         }
-        highlightedObject.x = (int)mapPos.x;
-        highlightedObject.y = (int)mapPos.y;
-        objectRenderer.UpdateObjects();
+
+        MoveFigure(highlightedObject, mapPos);
+
     }
 
     public void HandleFigureHighlight(Assets.Scripts.Map.MapObject selectedObj)
-    { 
+  
+      { 
         if (selectedObj == null)
         {
             Debug.LogError("Selected object not found in the list");
@@ -125,5 +126,19 @@ public class Global : MonoBehaviour
         }
         objectRenderer.UpdateObjects();
         Debug.Log(this.userTurn);
+    }
+
+    private void MoveFigure(Assets.Scripts.Map.MapObject figure, Vector2 newPos)
+     {
+        var currentPos = new Vector2(figure.x, figure.y);
+        var maxDistance = ((Assets.Scripts.Map.IMilitaryUnit)figure).MovementRange;
+        if (Vector2.Distance(currentPos, newPos) > maxDistance)
+        {
+            // can't go that far
+            return;
+        }
+        figure.x = (int)newPos.x;
+        figure.y = (int)newPos.y;
+        objectRenderer.UpdateObjects();
     }
 }
