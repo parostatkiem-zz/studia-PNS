@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Assets.Scripts.Map;
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,8 @@ public class Global : MonoBehaviour
 
     private CameraBehavior cameraBehavior;
 
+
+    public Light MapElementHighlight;
     public List<Assets.Scripts.Map.MapObject> listOfMapObjects { get; set; } 
     public Transform prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
  
@@ -47,7 +50,7 @@ public class Global : MonoBehaviour
         }
     }
 
-    public void HandleMapElementClick(Vector2 mapPos)
+    public void HandleMapElementClick(Vector2 mapPos, string terrainType=null)
     {
         if (highlightedObject==null)
         {
@@ -61,11 +64,11 @@ public class Global : MonoBehaviour
         {
             // something is standing in this place
             Debug.Log("something is standing in this place");
+            // TODO: detect clicking on castles
             return;
         }
-<<<<<<< HEAD
 
-        MoveFigure(highlightedObject, mapPos);
+        MoveFigure(highlightedObject, mapPos,terrainType);
 
     }
 
@@ -112,6 +115,7 @@ public class Global : MonoBehaviour
 
     // Use this for initialization
     void Start () {
+        MapElementHighlight.enabled = false;
         cameraBehavior = mainCamera.GetComponent<CameraBehavior>();
         listOfMapObjects = new List<Assets.Scripts.Map.MapObject>();
 
@@ -132,7 +136,7 @@ public class Global : MonoBehaviour
 		
 	}
 
-    public void endTurn()
+    public void EndTurn()
     {
         cameraBehavior.ResetCamera();
         var numberOfPlayers = 2;
@@ -145,11 +149,10 @@ public class Global : MonoBehaviour
         Debug.Log(this.userTurn);
     }
 
-    private void MoveFigure(Assets.Scripts.Map.MapObject figure, Vector2 newPos)
+    private void MoveFigure(Assets.Scripts.Map.MapObject figure, Vector2 newPos, string terrainType=null)
      {
-        var currentPos = new Vector2(figure.x, figure.y);
-        var maxDistance = ((Assets.Scripts.Map.IMilitaryUnit)figure).MovementRange;
-        if (Vector2.Distance(currentPos, newPos) > maxDistance)
+    
+        if (!CanFigureMoveTo(figure,newPos,terrainType))
         {
             // can't go that far
             return;
@@ -157,5 +160,32 @@ public class Global : MonoBehaviour
         figure.x = (int)newPos.x;
         figure.y = (int)newPos.y;
         objectRenderer.UpdateObjects();
+    }
+
+    private bool CanFigureMoveTo(Assets.Scripts.Map.MapObject figure, Vector2 newPos, string terrainType)
+    {
+        if (newPos == new Vector2(figure.x, figure.y)) { return false; }
+        if (terrainType == "terrain:water") { return false; }
+
+        var currentPos = new Vector2(figure.x, figure.y);
+        var maxDistance = ((Assets.Scripts.Map.IMilitaryUnit)figure).MovementRange;
+        return Vector2.Distance(currentPos, newPos) <= maxDistance;
+    }
+
+    public void HandleMouseOverMapElement(Vector2 coords, Vector3 realWorldPos,string terrainType=null)
+    {
+        if ((IMilitaryUnit)highlightedObject == null) { return; }
+
+        if (CanFigureMoveTo(highlightedObject, coords,terrainType))
+        {
+            MapElementHighlight.color = Color.green;
+        }
+        else
+        {
+            MapElementHighlight.color = Color.red;
+        }
+        MapElementHighlight.transform.position = realWorldPos + new Vector3(0, 0.3f, 0);
+        MapElementHighlight.enabled = true;
+    
     }
 }

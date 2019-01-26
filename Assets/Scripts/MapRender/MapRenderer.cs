@@ -85,6 +85,7 @@ public class MapRenderer :MonoBehaviour
                     );
 
                 elementInstance.GetComponent<MapElement>().mapCords = new Vector2(x, y);
+                elementInstance.tag = "terrain:"+map.mapElements[mapElementIndex].terrainType.ToString();
 
 
                 ///map object rendering
