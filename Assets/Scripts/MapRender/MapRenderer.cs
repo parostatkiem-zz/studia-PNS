@@ -11,6 +11,7 @@ public class MapRenderer :MonoBehaviour
     private float square_xz = 1f;
     private float square_y = 0.21f;
     private float scale = 1f;
+    private float treeProbability = 0.12f;
 
     private const float tableX = 10f;
     private const float tableZ = 8.5f; // table size is 10
@@ -20,18 +21,30 @@ public class MapRenderer :MonoBehaviour
     private Assets.Scripts.Map.Map map;
     private List<Assets.Scripts.Map.MapObject> listOfMapObjects;
     private List<Transform> prefabs;
+    private Transform prefab_trees;
     private ObjectRenderer objectRenderer;
 
-    public MapRenderer(Assets.Scripts.Map.Map map, 
+    public MapRenderer(Assets.Scripts.Map.Map map, Transform prefab_trees,
         Transform prefab_grass, Transform prefab_water, Transform prefab_sand,
         List<Assets.Scripts.Map.MapObject> listOfMapObjects, ObjectRenderer objectRenderer)
     {
         this.map = map;
         this.listOfMapObjects = listOfMapObjects;
         this.objectRenderer = objectRenderer;
-        
+        this.prefab_trees = prefab_trees;
         prefabs = new List<Transform> { prefab_grass,prefab_water,prefab_sand};
        
+    }
+
+    private bool HasTree(int elementIndex)
+    {
+        bool result = false;
+        try{
+            result = map.mapElements[elementIndex].hasTrees;
+        }
+        catch{}
+
+        return result;
     }
 
     public void RenderTheMap()
@@ -85,6 +98,21 @@ public class MapRenderer :MonoBehaviour
                     );
 
                 elementInstance.GetComponent<MapElement>().mapCords = new Vector2(x, y);
+                elementInstance.tag = "terrain:"+map.mapElements[mapElementIndex].terrainType.ToString();
+
+
+                // adding trees
+                int surroundingTrees = 0;
+                if(HasTree(mapElementIndex - 1)) { surroundingTrees++; }
+                if(HasTree(mapElementIndex + 1)) { surroundingTrees++; }
+                if (HasTree(mapElementIndex -map.width)) { surroundingTrees++; }
+                if (HasTree(mapElementIndex + map.width)) { surroundingTrees++; }
+
+                if (map.mapElements[mapElementIndex].terrainType== Assets.Scripts.Map.TerrainType.grass && 
+                 Random.value/3 + (surroundingTrees +1 )/5 > (1 - 0.75f)) {
+                    Instantiate(prefab_trees, elementInstance);
+                    map.mapElements[mapElementIndex].hasTrees = true;
+                }
 
 
                 ///map object rendering

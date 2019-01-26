@@ -66,6 +66,7 @@ namespace Assets.Scripts.Map
     {
         public TerrainType terrainType;
         public MapObject mapObject;
+        public bool hasTrees;
     }
 
     public class Map
