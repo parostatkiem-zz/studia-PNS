@@ -124,7 +124,6 @@ public class ObjectRenderer : MonoBehaviour
 
     private void MoveFigureOnMap(GameObject figure, Vector2 position)
     {
-        Debug.Log(this.scale + square_xz + separator);
         var newPos = new Vector3(
                 mapStart.x + (square_xz + separator) * scale * position.x,
                 figure.transform.position.y,

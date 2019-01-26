@@ -36,7 +36,6 @@ public class CameraBehavior : MonoBehaviour
 
     public void ResetCamera()
     {
-        Debug.Log("reset camera");
         CameraPosition = initialCameraPosition;
         CameraRotation = initialCameraRotation;
     }

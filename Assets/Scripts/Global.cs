@@ -83,8 +83,7 @@ public class Global : MonoBehaviour
 
         if (selectedObj == highlightedObject)
         {
-            Debug.Log("Unselecting object");
-
+            // unselect object
             cameraBehavior.ResetCamera();
 
             highlightedObject.isHighlighted = false;
