@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class ObjectRenderer : MonoBehaviour
+public class ObjectRenderer : Behaviour
 {
     private Assets.Scripts.Map.Map map;
     private List<Assets.Scripts.Map.MapObject> listOfMapObjects;

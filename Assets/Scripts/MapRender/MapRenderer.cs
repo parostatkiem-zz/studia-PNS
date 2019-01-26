@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 
-public class MapRenderer :MonoBehaviour
+public class MapRenderer : Behaviour
 {
     
 
