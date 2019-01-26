@@ -18,7 +18,7 @@ public class Global : MonoBehaviour
 
     public Light MapElementHighlight;
     public List<Assets.Scripts.Map.MapObject> listOfMapObjects { get; set; } 
-    public Transform prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
+    public Transform prefab_trees,prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
  
     private int userTurn = 0;
 
@@ -73,9 +73,7 @@ public class Global : MonoBehaviour
     }
 
     public void HandleFigureHighlight(Assets.Scripts.Map.MapObject selectedObj)
-  
       { 
-
         if (selectedObj == null)
         {
             Debug.LogError("Selected object not found in the list");
@@ -126,7 +124,7 @@ public class Global : MonoBehaviour
         //set prefabs for objectRenderer
         objectRenderer.setPrefabs(prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle);
 
-        var mapRenderer = new MapRenderer(GameMap, prefab_grass, prefab_water, prefab_sand, listOfMapObjects, objectRenderer);
+        var mapRenderer = new MapRenderer(GameMap,prefab_trees, prefab_grass, prefab_water, prefab_sand, listOfMapObjects, objectRenderer);
         mapRenderer.RenderTheMap();
         UserTurn = 0;
     }
@@ -138,14 +136,12 @@ public class Global : MonoBehaviour
 
     public void EndTurn()
     {
-        cameraBehavior.ResetCamera();
+
         var numberOfPlayers = 2;
         this.UserTurn = (this.UserTurn + 1) % numberOfPlayers;
-        foreach (var obj in listOfMapObjects)
-        {
-            obj.isHighlighted = false;
-        }
-        objectRenderer.UpdateObjects();
+        if (highlightedObject != null)
+        { HandleFigureHighlight(highlightedObject); }
+
         Debug.Log(this.userTurn);
     }
 

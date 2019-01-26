@@ -745,7 +745,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1434862253}
-        m_MethodName: endTurn
+        m_MethodName: EndTurn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -947,6 +947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MapElementHighlight: {fileID: 705460533}
+  prefab_trees: {fileID: 4074586487764880, guid: e36c2a5cc541a41ac9cf79ae3e0b8f66,
+    type: 2}
   prefab_grass: {fileID: 4313777933205446, guid: de1ff5c0b18b04955bc9b84a90af2f46,
     type: 2}
   prefab_water: {fileID: 4153797794939670, guid: c701dedb1cca247ae9f74fab60d65a35,
