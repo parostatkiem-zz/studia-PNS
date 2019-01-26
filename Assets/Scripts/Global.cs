@@ -15,8 +15,8 @@ public class Global : MonoBehaviour
 
     private CameraBehavior cameraBehavior;
 
-
     public Light MapElementHighlight;
+
     public List<Assets.Scripts.Map.MapObject> listOfMapObjects { get; set; } 
     public Transform prefab_trees,prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
  
@@ -74,6 +74,7 @@ public class Global : MonoBehaviour
 
     public void HandleFigureHighlight(Assets.Scripts.Map.MapObject selectedObj)
       { 
+
         if (selectedObj == null)
         {
             Debug.LogError("Selected object not found in the list");
@@ -114,6 +115,7 @@ public class Global : MonoBehaviour
     // Use this for initialization
     void Start () {
         MapElementHighlight.enabled = false;
+
         cameraBehavior = mainCamera.GetComponent<CameraBehavior>();
         listOfMapObjects = new List<Assets.Scripts.Map.MapObject>();
 
@@ -136,7 +138,7 @@ public class Global : MonoBehaviour
 
     public void EndTurn()
     {
-
+    
         var numberOfPlayers = 2;
         this.UserTurn = (this.UserTurn + 1) % numberOfPlayers;
         if (highlightedObject != null)
@@ -149,6 +151,7 @@ public class Global : MonoBehaviour
      {
     
         if (!CanFigureMoveTo(figure,newPos,terrainType))
+
         {
             // can't go that far
             return;
@@ -157,6 +160,7 @@ public class Global : MonoBehaviour
         figure.y = (int)newPos.y;
         objectRenderer.UpdateObjects();
     }
+
 
     private bool CanFigureMoveTo(Assets.Scripts.Map.MapObject figure, Vector2 newPos, string terrainType)
     {
@@ -184,4 +188,5 @@ public class Global : MonoBehaviour
         MapElementHighlight.enabled = true;
     
     }
+
 }
