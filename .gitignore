@@ -38,3 +38,16 @@ sysinfo.txt
 Assets/Plugins/*
 Packages/Newtonsoft*
 build*
+Assets/PhotonChatApi.meta
+Assets/Networking.meta
+Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll.meta
+Assets/Editor/PhotonChat/Newtonsoft.Json.dll.meta
+Assets/Editor/PhotonChat.meta
+Assets/Editor.meta
+Assets/Demo Chat/Resources/BitstreamVeraSans.meta
+Assets/Demo Chat/Resources.meta
+Assets/Demo Chat.meta
+Assets/PhotonChat.meta
+Assets/JsonDotNet/Assemblies/Windows/Newtonsoft.Json.dll.meta
+Assets/JsonDotNet/Assemblies/AOT/Newtonsoft.Json.dll.meta
+Assets/Demo Chat/Resources/OpenSans.meta
