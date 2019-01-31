@@ -143,7 +143,7 @@ public class Global : MonoBehaviour
         if (highlightedObject != null)
         { HandleFigureHighlight(highlightedObject); }
 
-        //reset all isReadyToUse fields
+        //reset all isReadyToUse fields of current player
         foreach(Assets.Scripts.Map.MapObject figure in listOfMapObjects)
         {
             if (figure.ownerID == this.UserTurn)
