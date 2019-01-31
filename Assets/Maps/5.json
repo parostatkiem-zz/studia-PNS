@@ -7,7 +7,8 @@
       "mapObject": {
         "ownerID": 1,
         "objType": 4,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {
@@ -21,7 +22,8 @@
       "mapObject": {
         "ownerID": 1,
         "objType": 5,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {
@@ -35,7 +37,8 @@
       "mapObject": {
         "ownerID": 1,
         "objType": 3,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {
@@ -1015,7 +1018,8 @@
       "mapObject": {
         "ownerID": 1,
         "objType": 3,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {
@@ -1164,7 +1168,8 @@
       "mapObject": {
         "ownerID": 1,
         "objType": 5,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {
@@ -1202,7 +1207,8 @@
       "mapObject": {
         "ownerID": 0,
         "objType": 5,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {
@@ -1219,7 +1225,8 @@
       "mapObject": {
         "ownerID": 0,
         "objType": 3,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {
@@ -1233,7 +1240,8 @@
       "mapObject": {
         "ownerID": 0,
         "objType": 4,
-        "attack": 15
+        "attack": 15,
+        "isReadyToMove": true
       }
     },
     {

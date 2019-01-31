@@ -20,12 +20,12 @@ namespace Assets.Scripts
             infoField.text = redTurn;
         }
 
-            public void updateField()
+        public void updateField()
         {
-            if (infoField.text.Equals(redTurn))
-                infoField.text = blueTurn;
-            else
-                infoField.text = redTurn;
+        if (infoField.text.Equals(redTurn))
+            infoField.text = blueTurn;
+        else
+            infoField.text = redTurn;
         }
     }
 }

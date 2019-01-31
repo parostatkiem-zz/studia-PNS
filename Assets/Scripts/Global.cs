@@ -137,32 +137,43 @@ public class Global : MonoBehaviour
 
     public void EndTurn()
     {
-    
+
         var numberOfPlayers = 2;
         this.UserTurn = (this.UserTurn + 1) % numberOfPlayers;
         if (highlightedObject != null)
         { HandleFigureHighlight(highlightedObject); }
 
+        //reset all isReadyToUse fields
+        foreach(Assets.Scripts.Map.MapObject figure in listOfMapObjects)
+        {
+            if (figure.ownerID == this.UserTurn)
+                figure.isReadyToMove = true;
+        }
+
+
         Debug.Log(this.userTurn);
     }
 
     private void MoveFigure(Assets.Scripts.Map.MapObject figure, Vector2 newPos, string terrainType=null)
-     {
-    
+     {   
         if (!CanFigureMoveTo(figure,newPos,terrainType))
-
         {
-            // can't go that far
+            // can't go that far or is used now
             return;
         }
+
+
+
         figure.x = (int)newPos.x;
         figure.y = (int)newPos.y;
+        figure.isReadyToMove = false;
         objectRenderer.UpdateObjects();
     }
 
 
     private bool CanFigureMoveTo(Assets.Scripts.Map.MapObject figure, Vector2 newPos, string terrainType)
     {
+        if (!figure.isReadyToMove){ return false; }//is used now
         if (newPos == new Vector2(figure.x, figure.y)) { return false; }
         if (terrainType == "terrain:water") { return false; }
 

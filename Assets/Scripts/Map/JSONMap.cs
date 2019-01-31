@@ -59,6 +59,7 @@ namespace Assets.Scripts.Map
         public int health { get; set; }
         public int deffend { get; set; }
         public int attack { get; set; }
+        public bool isReadyToMove { get; set; }
     }
 
 
