@@ -108,7 +108,8 @@ public class MapRenderer : Behaviour
                 if (HasTree(mapElementIndex -map.width)) { surroundingTrees++; }
                 if (HasTree(mapElementIndex + map.width)) { surroundingTrees++; }
 
-                if (map.mapElements[mapElementIndex].terrainType== Assets.Scripts.Map.TerrainType.grass && 
+                if (map.mapElements[mapElementIndex].terrainType== Assets.Scripts.Map.TerrainType.grass  
+                    && map.mapElements[mapElementIndex].mapObject==null &&
                  Random.value/3 + (surroundingTrees +1 )/5 > (1 - 0.75f)) {
                     Instantiate(prefab_trees, elementInstance);
                     map.mapElements[mapElementIndex].hasTrees = true;
