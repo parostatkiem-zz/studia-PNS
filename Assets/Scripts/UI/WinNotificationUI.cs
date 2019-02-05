@@ -6,38 +6,35 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.UI
+public class WinNotificationUI : MonoBehaviour
 {
-    class WinNotificationUI : MonoBehaviour
+    public Image panel;
+    public Button button;
+    public Text text;
+
+    public static string PlayerHeader = "Player ";
+    public static string InfoHeader = " won!\n Now the app will be closed after clicking button.";
+
+    public static string[] Players = { "Red", "Blue" };
+
+    public void Start()
     {
-        public Image panel;
-        public Button button;
-        public Text text;
+        panel.enabled = false;
+        button.gameObject.SetActive(false);
+        text.enabled = false;
+    }
 
-        public static string PlayerHeader = "Player ";
-        public static string InfoHeader = " won!\n Now the app will be closed after clicking button.";
+    public void ShowWinAdnotacion(int winnerID)
+    {
+        panel.enabled = true;
+        button.gameObject.SetActive(true);
 
-        public static string[] Players = { "Red", "Blue" };
+        text.text = PlayerHeader + Players[winnerID] + InfoHeader;
+        text.enabled = true;
+    }
 
-        public void Start()
-        {
-            panel.enabled = false;
-            button.gameObject.SetActive(false);
-            text.enabled = false;
-        }
-
-        public void ShowWinAdnotacion(int winnerID)
-        {
-            panel.enabled = true;
-            button.gameObject.SetActive(true);
-
-            text.text = PlayerHeader + Players[winnerID] + InfoHeader;
-            text.enabled = true;
-        }
-
-        public void EndGame()
-        {
-            Application.Quit();
-        }
+    public void EndGame()
+    {
+        Application.Quit();
     }
 }
