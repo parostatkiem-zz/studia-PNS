@@ -6,26 +6,23 @@ using System.Threading.Tasks;
 using UnityEngine.UI;
 using UnityEngine;
 
-namespace Assets.Scripts
+public class TurnInfoExtenderUI : MonoBehaviour
 {
-    class TurnInfoExtender : MonoBehaviour
+    public Text infoField;
+
+    public string redTurn = "Turn: Red";
+    public string blueTurn = "Turn Blue";
+
+    public void Start()
     {
-        public Text infoField;
+        infoField.text = redTurn;
+    }
 
-        public string redTurn = "Turn: Red";
-        public string blueTurn = "Turn Blue";
-
-        public void Start()
-        {
-            infoField.text = redTurn;
-        }
-
-        public void updateField()
-        {
+    public void updateField()
+    {
         if (infoField.text.Equals(redTurn))
             infoField.text = blueTurn;
         else
             infoField.text = redTurn;
-        }
     }
 }
