@@ -19,7 +19,8 @@ namespace Assets.Scripts.Map
             switch (jo["objType"].Value<int>())
             {
                 case 1:
-                    return JsonConvert.DeserializeObject<EmptyField>(jo.ToString(), SpecifiedSubclassConversion);
+                    return null;
+                //    return JsonConvert.DeserializeObject<EmptyField>(jo.ToString(), SpecifiedSubclassConversion);
                 case 2:
                     return JsonConvert.DeserializeObject<Castle>(jo.ToString(), SpecifiedSubclassConversion);
                 case 3:
@@ -28,8 +29,8 @@ namespace Assets.Scripts.Map
                     return JsonConvert.DeserializeObject<Archer>(jo.ToString(), SpecifiedSubclassConversion);
                 case 5:
                     return JsonConvert.DeserializeObject<HorseMan>(jo.ToString(), SpecifiedSubclassConversion);
-                case 6:
-                    return JsonConvert.DeserializeObject<GoldMine>(jo.ToString(), SpecifiedSubclassConversion);
+                //case 6:
+                //    return JsonConvert.DeserializeObject<GoldMine>(jo.ToString(), SpecifiedSubclassConversion);
                 default:
                     throw new Exception();
             }

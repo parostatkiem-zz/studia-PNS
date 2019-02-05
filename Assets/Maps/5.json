@@ -6,1241 +6,1263 @@
       "terrainType": 0,
       "mapObject": {
         "ownerID": 1,
+        "objType": 3,
+        "attack": 30,
+        "health": 80,
+        "isReadyToMove": true
+      }
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 1,
+        "objType": 5,
+        "attack": 20,
+        "health": 45,
+        "isReadyToMove": true
+      }
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 1,
+        "objType": 3,
+        "attack": 30,
+        "health": 80,
+        "isReadyToMove": true
+      }
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 1,
+        "objType": 3,
+        "attack": 30,
+        "health": 80,
+        "isReadyToMove": true
+      }
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 1
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 2
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 1,
+        "objType": 5,
+        "attack": 20,
+        "health": 45,
+        "isReadyToMove": true
+      }
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 0,
+        "objType": 5,
+        "attack": 20,
+        "health": 45,
+        "isReadyToMove": true
+      }
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 1,
+        "objType": 2,
+        "attack": 0,
+        "health": 40,
+        "isReadyToMove": false
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 0,
+        "objType": 2,
+        "attack": 0,
+        "health": 40,
+        "isReadyToMove": false
+      }
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 0,
+        "objType": 3,
+        "attack": 30,
+        "health": 80,
+        "isReadyToMove": true
+      }
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0
+    },
+    {
+      "terrainType": 0,
+      "mapObject": {
+        "ownerID": 0,
         "objType": 4,
-        "attack": 15,
-        "isReadyToMove": true
-      }
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0,
-      "mapObject": {
-        "ownerID": 1,
-        "objType": 5,
-        "attack": 15,
-        "isReadyToMove": true
-      }
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0,
-      "mapObject": {
-        "ownerID": 1,
-        "objType": 3,
-        "attack": 15,
-        "isReadyToMove": true
-      }
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0,
-      "mapObject": {
-        "ownerID": 1,
-        "objType": 3,
-        "attack": 15,
-        "isReadyToMove": true
-      }
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 1
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 2
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0,
-      "mapObject": {
-        "ownerID": 1,
-        "objType": 5,
-        "attack": 15,
-        "isReadyToMove": true
-      }
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0,
-      "mapObject": {
-        "ownerID": 0,
-        "objType": 5,
-        "attack": 15,
-        "isReadyToMove": true
-      }
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0,
-      "mapObject": {
-        "ownerID": 0,
-        "objType": 3,
-        "attack": 15,
-        "isReadyToMove": true
-      }
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0
-    },
-    {
-      "terrainType": 0,
-      "mapObject": {
-        "ownerID": 0,
-        "objType": 4,
-        "attack": 15,
+        "attack": 25,
+        "health": 30,
         "isReadyToMove": true
       }
     },

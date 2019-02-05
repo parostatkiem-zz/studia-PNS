@@ -1,0 +1,39 @@
+Military templates
+
+
+----Archer----
+"mapObject": {
+        "ownerID": 1,
+        "objType": 4,
+        "attack": 25,
+        "health": 30,
+        "isReadyToMove": true
+      }
+
+
+----Warior----
+"mapObject": {
+        "ownerID": 1,
+        "objType": 3,
+        "attack": 30,
+        "health": 80,
+        "isReadyToMove": true
+      }
+
+----Horseman----
+"mapObject": {
+        "ownerID": 1,
+        "objType": 5,
+        "attack": 20,
+        "health": 45,
+        "isReadyToMove": true
+      }
+
+----Castle----
+"mapObject": {
+        "ownerID": 1,
+        "objType": 2,
+        "attack": 0,
+        "health": 325,
+        "isReadyToMove": false
+      }

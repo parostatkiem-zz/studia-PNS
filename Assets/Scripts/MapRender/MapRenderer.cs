@@ -117,7 +117,7 @@ public class MapRenderer : Behaviour
 
                 ///map object rendering
                 ///
-                if (map.mapElements[mapElementIndex].mapObject != null && !(map.mapElements[mapElementIndex].mapObject is Assets.Scripts.Map.EmptyField))
+                if (map.mapElements[mapElementIndex].mapObject != null) // && !(map.mapElements[mapElementIndex].mapObject is Assets.Scripts.Map.EmptyField)
                 {
                     map.mapElements[mapElementIndex].mapObject.x = x;
                     map.mapElements[mapElementIndex].mapObject.y = y;

@@ -3,7 +3,8 @@ using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using Assets.Scripts.UI;
 
 
 public class Global : MonoBehaviour
@@ -19,6 +20,7 @@ public class Global : MonoBehaviour
 
     public List<Assets.Scripts.Map.MapObject> listOfMapObjects { get; set; } 
     public Transform prefab_trees,prefab_grass, prefab_water, prefab_sand, prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle;
+    private WinNotificationUI winNotification;
  
     private int userTurn = 0;
 
@@ -62,14 +64,37 @@ public class Global : MonoBehaviour
 
         if (mapObjectAtPos != null)
         {
+            if (mapObjectAtPos.ownerID == highlightedObject.ownerID) return;
             // something is standing in this place
-            Debug.Log("something is standing in this place");
+            Debug.Log("something is standing in this place, I decide to attack this");
+
+            mapObjectAtPos.AttackThisObject(highlightedObject.attack);
+            if (mapObjectAtPos.health <= 0)
+            {
+                //scenario of win
+                if(mapObjectAtPos.objType == 2)
+                {
+                    winNotification.ShowWinAdnotacion(highlightedObject.ownerID);
+                }
+
+
+                Destroy(mapObjectAtPos.instance);
+
+                mapPos.x = mapObjectAtPos.x;
+                mapPos.y = mapObjectAtPos.y;
+
+                listOfMapObjects.Remove(mapObjectAtPos);
+            }
+            else
+            {
+                highlightedObject.isReadyToMove = false;
+                return;
+            }
+
             // TODO: detect clicking on castles
-            return;
         }
 
         MoveFigure(highlightedObject, mapPos,terrainType);
-
     }
 
     public void HandleFigureHighlight(Assets.Scripts.Map.MapObject selectedObj)
@@ -128,6 +153,9 @@ public class Global : MonoBehaviour
         var mapRenderer = new MapRenderer(GameMap,prefab_trees, prefab_grass, prefab_water, prefab_sand, listOfMapObjects, objectRenderer);
         mapRenderer.RenderTheMap();
         UserTurn = 0;
+
+
+        winNotification = (WinNotificationUI)GameObject.Find("WinNotificationPanel").GetComponent(typeof(WinNotificationUI));
     }
 	
 	// Update is called once per frame
@@ -173,6 +201,7 @@ public class Global : MonoBehaviour
 
     private bool CanFigureMoveTo(Assets.Scripts.Map.MapObject figure, Vector2 newPos, string terrainType)
     {
+        if (figure is Castle) { return false; }
         if (!figure.isReadyToMove){ return false; }//is used now
         if (newPos == new Vector2(figure.x, figure.y)) { return false; }
         if (terrainType == "terrain:water") { return false; }
@@ -184,7 +213,7 @@ public class Global : MonoBehaviour
 
     public void HandleMouseOverMapElement(Vector2 coords, Vector3 realWorldPos,string terrainType=null)
     {
-        if ((IMilitaryUnit)highlightedObject == null) { return; }
+        if ((IMilitaryUnit)highlightedObject == null || highlightedObject.objType == 2) { return; }
 
         if (CanFigureMoveTo(highlightedObject, coords,terrainType))
         {

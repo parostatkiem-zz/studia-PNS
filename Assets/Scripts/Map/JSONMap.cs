@@ -11,55 +11,62 @@ namespace Assets.Scripts.Map
         hills = 3
     }
 
-    public class EmptyField : MapObject
+
+    public class Castle : MapObject, IMilitaryUnit
     {
-
-    }
-
-    public class Castle : MapObject
-    {
-
+        private float movementRange = 0.0f;
+        public float MovementRange { get { return movementRange; } set { movementRange = value; } }
     }
 
     public class Warrior : MapObject,IMilitaryUnit
     {
-        float movementRange = 1.5f;
+        private float movementRange = 1.5f;
         public float MovementRange { get { return movementRange; } set { movementRange = value; } }
     }
 
     public class Archer : MapObject, IMilitaryUnit
     {
-        float movementRange = 1.5f;
+        private float movementRange = 1.5f;
         public float MovementRange { get { return movementRange; } set { movementRange = value; } }
     }
 
     public class HorseMan : MapObject, IMilitaryUnit
     {
-        float movementRange =3.9f;
-    public float MovementRange { get { return movementRange; } set { movementRange = value; } }
-
+        private float movementRange =3.9f;
+        public float MovementRange { get { return movementRange; } set { movementRange = value; } }
     }
-
+    /*
     public class GoldMine : MapObject
     {
 
     }
 
+    public class EmptyField : MapObject
+    {
+
+    }
+    */
     [JsonConverter(typeof(MapObjectConverter))]
     public abstract class MapObject
     {
+        //Map fields
         public GameObject instance { get; set; }
         public bool isHighlighted { get; set; }
-        public int ownerID { get; set; }
         public int x { get; set; }
         public int y { get; set; }
+
+        //Json fields
+        public int ownerID { get; set; }
         public int objType { get; set; }
-        public bool fraction { get; set; }
-        public string name { get; set; }
         public int health { get; set; }
-        public int deffend { get; set; }
         public int attack { get; set; }
         public bool isReadyToMove { get; set; }
+
+        //Methods
+        public void AttackThisObject(int value)
+        {
+            this.health -= value;
+        }
     }
 
 
