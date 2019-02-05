@@ -18,7 +18,7 @@ public class ObjectInfoUI : MonoBehaviour {
 
     public void Start()
     {
-        this.HideInfoUI();
+        HideInfoUI();
     }
 
     public void UpdateFromMapObject(MapObject mapObject)
@@ -34,15 +34,19 @@ public class ObjectInfoUI : MonoBehaviour {
 
     public void HideInfoUI()
     {
+
+        GetComponent<Image>().enabled = false;
         OwnerInfo.enabled = false;
-        HealthInfo.enabled = false;
+       HealthInfo.enabled = false;
         AttackInfo.enabled = false;
     }
 
     public void ShowInfoUI()
     {
-        OwnerInfo.enabled = true;
+        GetComponent<Image>().enabled = true;
+         OwnerInfo.enabled = true;
         HealthInfo.enabled = true;
         AttackInfo.enabled = true;
+        transform.position =Input.mousePosition + new Vector3(0,100,0);
     }
 }
