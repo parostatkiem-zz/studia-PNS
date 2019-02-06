@@ -2239,7 +2239,7 @@ MonoBehaviour:
     type: 2}
   prefab_horseman: {fileID: 4161744626978084, guid: 932b75a77a75dfc45a53062703cb7806,
     type: 2}
-  prefab_castle: {fileID: 4854774834311506, guid: a46c8cf2bc4d6b94d9cb9a7cfba2f7ab,
+  prefab_castle: {fileID: 4507573564353876, guid: 206367988c77441f98406ddeee7d5804,
     type: 2}
   mainCamera: {fileID: 534669904}
 --- !u!4 &1434862254
@@ -2355,7 +2355,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -37.8}
-  m_SizeDelta: {x: 194.95, y: 50}
+  m_SizeDelta: {x: 214.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644593381
 MonoBehaviour:

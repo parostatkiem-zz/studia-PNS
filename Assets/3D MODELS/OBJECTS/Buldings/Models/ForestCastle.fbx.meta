@@ -1,53 +1,14 @@
 fileFormatVersion: 2
-guid: aec089bf981929449ab448274e1a234f
+guid: 758bef35d3e7c74459b15b2b738f7931
 ModelImporter:
-  serializedVersion: 23
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: LongWall
-    100004: LongWall2
-    100006: Tower
-    100008: Tower2
-    100010: Tower3
-    100012: Tower4
-    100014: Wall
-    100016: Wall2
     400000: //RootNode
-    400002: LongWall
-    400004: LongWall2
-    400006: Tower
-    400008: Tower2
-    400010: Tower3
-    400012: Tower4
-    400014: Wall
-    400016: Wall2
-    2100000: No Name
-    2100002: Sciana3
-    2100004: Sciana
-    2300000: LongWall
-    2300002: LongWall2
-    2300004: Tower
-    2300006: Tower2
-    2300008: Tower3
-    2300010: Tower4
-    2300012: Wall
-    2300014: Wall2
-    3300000: LongWall
-    3300002: LongWall2
-    3300004: Tower
-    3300006: Tower2
-    3300008: Tower3
-    3300010: Tower4
-    3300012: Wall
-    3300014: Wall2
-    4300000: Wall
-    4300002: Tower
-    4300004: Tower2
-    4300006: LongWall2
-    4300008: Tower3
-    4300010: Tower4
-    4300012: Wall2
-    4300014: LongWall
+    2100000: MainMaterial
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: ForestCastle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -99,8 +60,6 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

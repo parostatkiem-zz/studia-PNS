@@ -62,7 +62,8 @@ public class ObjectRenderer : Behaviour
         {
             highlightColor = Color.cyan;
         }
-        var coloredMaterial = elementInstance.GetComponent<Renderer>().materials.FirstOrDefault(m => m.name == "Podstawka (Instance)");
+        var renderer = elementInstance.GetComponent<Renderer>();
+        var coloredMaterial = renderer? renderer.materials.FirstOrDefault(m => m.name == "Podstawka (Instance)"):null;
         if (coloredMaterial != null) { coloredMaterial.SetColor("_Color", highlightColor); }
         elementInstance.GetComponent<militaryBehavior>().mapPosition = mapPosition;
         elementInstance.GetComponent<militaryBehavior>().realPosition = elementInstance.transform.position;
@@ -102,13 +103,14 @@ public class ObjectRenderer : Behaviour
                 }
             }
 
-            if (listObj.isHighlighted)
+            var instanceRenderer = listObj.instance.GetComponent<Renderer>();
+            if (listObj.isHighlighted && instanceRenderer != null)
             {
-                listObj.instance.GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Bumped Diffuse");
+                instanceRenderer.material.shader = Shader.Find("Self-Illumin/Bumped Diffuse");
             }
             else
             {
-                listObj.instance.GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
+                instanceRenderer.material.shader = Shader.Find("Diffuse");
             }
 
             instanceBehavior = listObj.instance.GetComponent<militaryBehavior>();

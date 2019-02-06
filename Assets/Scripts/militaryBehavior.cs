@@ -18,11 +18,15 @@ public class militaryBehavior : MonoBehaviour {
     void Start () {
         globalScript = (Global)GameObject.Find("GLOBAL").GetComponent(typeof(Global));
         objectInfoUI = (ObjectInfoUI)GameObject.Find("ObjectInfo").GetComponent(typeof(ObjectInfoUI));
-        playerColor = GetComponent<Renderer>().material.GetColor("_Color");
-        listInstanceRef = globalScript.listOfMapObjects.FindLast(obj => obj.x == mapPosition.x && obj.y == mapPosition.y);
-        if (listInstanceRef != null)
+        var renderer = GetComponent<Renderer>();
+        playerColor = renderer ? renderer.material.GetColor("_Color"):Color.black;
+        if (globalScript != null && globalScript.listOfMapObjects!=null)
         {
-            listInstanceRef.instance = gameObject;
+            listInstanceRef = globalScript.listOfMapObjects.FindLast(obj => obj.x == mapPosition.x && obj.y == mapPosition.y);
+            if (listInstanceRef != null)
+            {
+                listInstanceRef.instance = gameObject;
+            }
         }
     }
 	
