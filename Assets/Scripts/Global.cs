@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 public class Global : MonoBehaviour
 {
+    //tests
+
+    PNSLogger logger = new PNSLogger("Global - script");
 
     // Main Map object with all informations about current map states
     private Assets.Scripts.Map.Map gameMap;
@@ -22,7 +25,6 @@ public class Global : MonoBehaviour
     private WinNotificationUI winNotification;
  
     private int userTurn = 0;
-
 
     private int UserTurn 
     {
@@ -55,7 +57,7 @@ public class Global : MonoBehaviour
     {
         if (highlightedObject==null)
         {
-            Debug.Log("no figure is selected");
+            this.logger.Log("no figure is selected");
             return;
         }
 
@@ -65,14 +67,16 @@ public class Global : MonoBehaviour
         {
             if (mapObjectAtPos.ownerID == highlightedObject.ownerID) return;
             // something is standing in this place
-            Debug.Log("something is standing in this place, I decide to attack this");
+            this.logger.Log("something is standing in this place, I decide to attack this");
 
             mapObjectAtPos.AttackThisObject(highlightedObject.attack);
             if (mapObjectAtPos.health <= 0)
             {
+                this.logger.Log("object killed");
                 //scenario of win
                 if(mapObjectAtPos.objType == 2)
                 {
+                    this.logger.Log("player won");
                     winNotification.ShowWinAdnotacion(highlightedObject.ownerID);
                 }
 
@@ -97,16 +101,17 @@ public class Global : MonoBehaviour
     }
 
     public void HandleFigureHighlight(Assets.Scripts.Map.MapObject selectedObj)
-      { 
-
+      {
         if (selectedObj == null)
         {
-            Debug.LogError("Selected object not found in the list");
+            this.logger.Log("selected object not found in the list");
             return;
         }
 
         if (selectedObj == highlightedObject)
         {
+            this.logger.Log("reser camera pos");
+
             // unselect object
             cameraBehavior.ResetCamera();
 
@@ -118,6 +123,7 @@ public class Global : MonoBehaviour
 
         if ( selectedObj.ownerID != userTurn)
         {
+            this.logger.Log("other owner");
             // player wants to select the unit he doesn't own 
             return;
         }
@@ -137,6 +143,8 @@ public class Global : MonoBehaviour
 
     // Use this for initialization
     void Start () {
+        this.logger.Log("configuring global script class");
+
         MapElementHighlight.enabled = false;
 
         cameraBehavior = mainCamera.GetComponent<CameraBehavior>();
@@ -144,7 +152,9 @@ public class Global : MonoBehaviour
 
         var filter= gameObject.AddComponent<MeshFilter>();
         gameObject.AddComponent<MeshRenderer>();
-        this.gameMap = Assets.Scripts.Map.MapLoader.LoadMapFromJson(Assets.Scripts.Map.GlobalMapConfig.JsonMapPath);
+
+        var mapLoader = new MapLoader();
+        this.gameMap = mapLoader.LoadMapFromJson(Assets.Scripts.Map.GlobalMapConfig.JsonMapPath);
 
         //set prefabs for objectRenderer
         objectRenderer.setPrefabs(prefab_archer, prefab_swordsman, prefab_mutant, prefab_horseman, prefab_castle);
@@ -164,11 +174,12 @@ public class Global : MonoBehaviour
 
     public void EndTurn()
     {
+        this.logger.Log("ending turn");
 
         var numberOfPlayers = 2;
         this.UserTurn = (this.UserTurn + 1) % numberOfPlayers;
         if (highlightedObject != null)
-        { HandleFigureHighlight(highlightedObject); }
+            HandleFigureHighlight(highlightedObject);
 
         //reset all isReadyToUse fields of current player
         foreach(Assets.Scripts.Map.MapObject figure in listOfMapObjects)
@@ -178,18 +189,19 @@ public class Global : MonoBehaviour
         }
 
 
-        Debug.Log(this.userTurn);
+        this.logger.Log(this.userTurn);
     }
 
     private void MoveFigure(Assets.Scripts.Map.MapObject figure, Vector2 newPos, string terrainType=null)
-     {   
+     {
+        this.logger.Log("trying to move figure");
+
         if (!CanFigureMoveTo(figure,newPos,terrainType))
         {
             // can't go that far or is used now
+            this.logger.Log("figure can't be moved");
             return;
         }
-
-
 
         figure.x = (int)newPos.x;
         figure.y = (int)newPos.y;

@@ -6,6 +6,8 @@ using Assets.Scripts.Map;
 
 public class ObjectInfoUI : MonoBehaviour {
 
+    PNSLogger logger = new PNSLogger("ObjectInfoUI - script");
+
     public Text OwnerInfo;
     public Text HealthInfo;
     public Text AttackInfo;
@@ -18,11 +20,13 @@ public class ObjectInfoUI : MonoBehaviour {
 
     public void Start()
     {
+        logger.Log("setting up class");
         HideInfoUI();
     }
 
     public void UpdateFromMapObject(MapObject mapObject)
     {
+        logger.Log("updatting UI from MapObject class");
         if (mapObject.ownerID == 1)
             OwnerInfo.text = bluePlayer;
         else
@@ -34,7 +38,7 @@ public class ObjectInfoUI : MonoBehaviour {
 
     public void HideInfoUI()
     {
-
+        logger.Log("hidding UI");
         GetComponent<Image>().enabled = false;
         OwnerInfo.enabled = false;
        HealthInfo.enabled = false;
@@ -43,6 +47,7 @@ public class ObjectInfoUI : MonoBehaviour {
 
     public void ShowInfoUI()
     {
+        logger.Log("showing UI");
         GetComponent<Image>().enabled = true;
          OwnerInfo.enabled = true;
         HealthInfo.enabled = true;

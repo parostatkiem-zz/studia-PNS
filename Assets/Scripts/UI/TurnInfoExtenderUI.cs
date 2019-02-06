@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class TurnInfoExtenderUI : MonoBehaviour
 {
+    PNSLogger logger = new PNSLogger("TurnInfoExtenderUI - script");
+
     public Text infoField;
 
     public string redTurn = "Turn: Red";
@@ -20,6 +22,7 @@ public class TurnInfoExtenderUI : MonoBehaviour
 
     public void updateField()
     {
+        logger.Log("updatting turn info UI");
         if (infoField.text.Equals(redTurn))
             infoField.text = blueTurn;
         else

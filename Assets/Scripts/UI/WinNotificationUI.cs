@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class WinNotificationUI : MonoBehaviour
 {
+    PNSLogger logger = new PNSLogger("WinNotificationUI");
+
     public Image panel;
     public Button button;
     public Text text;
@@ -26,6 +28,8 @@ public class WinNotificationUI : MonoBehaviour
 
     public void ShowWinAdnotacion(int winnerID)
     {
+        logger.Log("showing adnotacion about win");
+
         panel.enabled = true;
         button.gameObject.SetActive(true);
 
@@ -35,6 +39,8 @@ public class WinNotificationUI : MonoBehaviour
 
     public void EndGame()
     {
+        logger.Log("closing game - not in debug mode");
+
         Application.Quit();
     }
 }

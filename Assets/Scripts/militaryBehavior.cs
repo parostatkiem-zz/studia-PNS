@@ -12,6 +12,8 @@ public class militaryBehavior : MonoBehaviour {
     private Global globalScript;
     private ObjectInfoUI objectInfoUI;
 
+    //tests
+    PNSLogger logger = new PNSLogger("militaruBehaviour_script");
 
     void Start () {
         globalScript = (Global)GameObject.Find("GLOBAL").GetComponent(typeof(Global));
@@ -36,17 +38,20 @@ public class militaryBehavior : MonoBehaviour {
 
     private void OnMouseDown()
     {
+        this.logger.Log("mouse down on military");
         globalScript.HandleFigureHighlight(listInstanceRef);
     }
 
     private void OnMouseEnter()
     {
+        this.logger.Log("mouse enter on military");
         this.objectInfoUI.UpdateFromMapObject(listInstanceRef);
         this.objectInfoUI.ShowInfoUI();
     }
 
     private void OnMouseExit()
     {
+        this.logger.Log("mouse exit from military");
         this.objectInfoUI.HideInfoUI();
     }
 
