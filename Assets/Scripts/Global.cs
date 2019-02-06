@@ -65,7 +65,7 @@ public class Global : MonoBehaviour
 
         if (mapObjectAtPos != null)
         {
-            if (mapObjectAtPos.ownerID == highlightedObject.ownerID) return;
+            if (mapObjectAtPos.ownerID == highlightedObject.ownerID || !highlightedObject.isReadyToMove) return;
             // something is standing in this place
             this.logger.Log("something is standing in this place, I decide to attack this");
 
