@@ -226,7 +226,7 @@
         "ownerID": 1,
         "objType": 2,
         "attack": 0,
-        "health": 325,
+        "health": 115,
         "isReadyToMove": false
       }
     },
@@ -1164,7 +1164,7 @@
         "ownerID": 0,
         "objType": 2,
         "attack": 0,
-        "health": 325,
+        "health": 115,
         "isReadyToMove": false
       }
     },
